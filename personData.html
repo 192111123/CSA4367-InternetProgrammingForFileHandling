@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Menu</title>
+</head>
+<body>
+<body style="background-color:lightGreen">
+<h1><center>MY MENU</center></h1><hr>
+<select id="dropdown" onchange="window.location.href=this.value">">
+    <option value="#">Select Student Name</option>
+    <option value="resume.html">RESUME</option>
+    <option value="Letter.html">Letter</option>
+</select>
+<select id="dropdown" onchange="window.location.href=this.value">">
+    <option value="#">Select Student Name</option>
+    <option value="form.html">FORM</option> 
+    <option value="a.html">A</option>
+</select>
+<script>
+document.getElementById('dropdown').addEventListener('change', function()
+ {
+    var selectedOption = this.options[this.selectedIndex];
+    if (selectedOption.value !== '#')
+ {
+        window.location.href = selectedOption.value;
+    }
+}
+</script>
+</body>
+</html>
